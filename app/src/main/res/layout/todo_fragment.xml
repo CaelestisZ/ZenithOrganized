@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ui.todo.TodoFragment"
+    android:padding="20dp">
+
+    <ListView
+        android:id="@+id/todo_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/task_view"
+        android:padding="20dp" />
+
+
+    <LinearLayout
+        android:id="@+id/task_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/todo_rounded"
+        android:padding="3dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <EditText
+            android:id="@+id/todo_task"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:hint="Add task"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/white"
+            android:textColorHint="@color/white"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="5dp"/>
+
+        <Button
+            android:id="@+id/todo_button"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:text="ADD"
+            android:textStyle="bold"
+            android:background="@drawable/add_button_rounded"
+            android:textColor="@color/colorPrimary"
+            android:layout_weight="1"
+            android:layout_marginRight="15dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

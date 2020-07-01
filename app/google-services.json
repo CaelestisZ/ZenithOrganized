@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "431622857185",
+    "firebase_url": "https://cosycalendar2468.firebaseio.com",
+    "project_id": "cosycalendar2468",
+    "storage_bucket": "cosycalendar2468.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:431622857185:android:4f08d8a98dc4bb32bab2a0",
+        "android_client_info": {
+          "package_name": "com.lumiere.cosycalendar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "431622857185-h50e7uo31dpaetle4tahn0p5kvjq7b89.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlQPRfIRZhwSiSB3eR8UjydxaM5jMDvpc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "431622857185-h50e7uo31dpaetle4tahn0p5kvjq7b89.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

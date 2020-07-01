@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:mcv_showOtherDates="all"
+            app:mcv_selectionColor="@color/colorPrimary"
+            app:mcv_headerTextAppearance="@color/colorPrimary"
+            android:layout_margin="10dp"
+            android:background="@drawable/calendar_rounded"
+            android:elevation="3dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="30dp">
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="30dp"
+                android:text="Event Name:"
+                android:textColor="#000000"/>
+
+            <EditText
+                android:id="@+id/event_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:ems="10"
+                android:hint="Event Name"
+                android:inputType="textPersonName"
+                android:background="@drawable/calendar_rounded"
+                android:padding="10dp"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:layout_width="199dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                android:text="Time:"
+                android:textColor="#000000"/>
+
+            <EditText
+                android:id="@+id/reminder_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="30dp"
+                android:hint="Time (24hr format)"
+                android:inputType="time"
+                android:background="@drawable/calendar_rounded"
+                android:padding="10dp"
+                android:layout_marginRight="10dp"/>
+
+            <Button
+                android:id="@+id/set_reminder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_button"
+                android:text="Set"
+                android:textColor="#ffffff"
+                android:layout_marginBottom="10dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

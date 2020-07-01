@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.github.tlaabs.timetableview.TimetableView
+            android:id="@+id/timetable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:header_title="@array/Week"
+            app:start_time="8"
+            app:column_count="7"
+            app:row_count="10"
+            android:layout_weight="1"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="30dp">
+
+
+            <Button
+                android:id="@+id/remove"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_button"
+                android:text="Remove"
+                android:textColor="#ffffff"
+                android:layout_margin="20dp"
+                android:visibility="invisible"/>
+
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="30dp"
+            android:text="Subject Title:"
+            android:textColor="#000000"/>
+
+        <EditText
+            android:id="@+id/subject_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:ems="10"
+            android:hint="Subject Title"
+            android:inputType="textPersonName"
+            android:background="@drawable/calendar_rounded"
+            android:padding="10dp" />
+
+        <TextView
+            android:layout_width="199dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:text="Venue:"
+            android:textColor="#000000"/>
+
+        <EditText
+            android:id="@+id/venue_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:ems="10"
+            android:hint="Venue of Event"
+            android:inputType="textPersonName"
+            android:background="@drawable/calendar_rounded"
+            android:padding="10dp" />
+
+            <TextView
+                android:layout_width="199dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                android:text="Day:"
+                android:textColor="#000000"/>
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/Week_list"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/calendar_rounded"
+                android:padding="10dp"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+            android:layout_width="199dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:text="Start Time:"
+            android:textColor="#000000"/>
+
+        <EditText
+            android:id="@+id/start_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginLeft="10dp"
+            android:hint="Start Time (24hr format)"
+            android:inputType="time"
+            android:background="@drawable/calendar_rounded"
+            android:padding="10dp"
+            android:layout_marginRight="10dp"/>
+
+
+
+        <TextView
+            android:layout_width="199dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:text="End Time:"
+            android:textColor="#000000"/>
+
+        <EditText
+            android:id="@+id/end_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="30dp"
+            android:hint="End Time (24hr format)"
+            android:inputType="time"
+            android:background="@drawable/calendar_rounded"
+            android:padding="10dp"
+            android:layout_marginRight="10dp"/>
+
+
+
+        <Button
+            android:id="@+id/add_schedule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button"
+            android:text="Add"
+            android:textColor="#ffffff"/>
+
+            <Button
+                android:id="@+id/remove_all"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_button"
+                android:text="Remove all"
+                android:textColor="#ffffff"
+                android:layout_margin="20dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

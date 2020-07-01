@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_week">
+
+    <fragment
+        android:id="@+id/nav_month"
+        android:name="com.lumiere.cosycalendar.ui.gallery.GalleryFragment"
+        android:label="@string/menu_month"
+        tools:layout="@layout/fragment_gallery" >
+        <action
+            android:id="@+id/action_nav_month_to_nav_day"
+            app:destination="@id/nav_week" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_week"
+        android:name="com.lumiere.cosycalendar.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_week"
+        tools:layout="@layout/fragment_slideshow" >
+        <action
+            android:id="@+id/action_nav_day_to_nav_month"
+            app:destination="@id/nav_month" />
+        <action
+            android:id="@+id/action_nav_day_to_nav_todo"
+            app:destination="@id/nav_todo" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_todo"
+        android:name="com.lumiere.cosycalendar.ui.todo.TodoFragment"
+        android:label="@string/menu_todo"
+        tools:layout="@layout/todo_fragment" >
+        <action
+            android:id="@+id/action_nav_todo_to_nav_month"
+            app:destination="@id/nav_month" />
+    </fragment>
+</navigation>
